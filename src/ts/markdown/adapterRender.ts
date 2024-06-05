@@ -35,3 +35,7 @@ export const plantumlRenderAdapter = {
     getCode: (el: Element) => el.textContent,
     getElements: (el: HTMLElement | Document) => el.querySelectorAll(".language-plantuml"),
 };
+export const ecodeRenderAdapter = {
+    getCode: (el: HTMLElement) => el.innerText,
+    getElements: (el: HTMLElement | Document) => el.querySelectorAll(".language-ecode"),
+};

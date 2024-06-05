@@ -8,6 +8,7 @@ import {mathRender} from "../markdown/mathRender";
 import {mermaidRender} from "../markdown/mermaidRender";
 import {markmapRender} from "../markdown/markmapRender";
 import {mindmapRender} from "../markdown/mindmapRender";
+import {ecodeRender} from "../markdown/ecodeRender";
 import {plantumlRender} from "../markdown/plantumlRender";
 
 export const processPasteCode = (html: string, text: string, type = "sv") => {
@@ -75,6 +76,8 @@ export const processCodeRender = (previewPanel: HTMLElement, vditor: IVditor) =>
         chartRender(previewPanel, vditor.options.cdn, vditor.options.theme);
     } else if (language === "mindmap") {
         mindmapRender(previewPanel, vditor.options.cdn, vditor.options.theme);
+    } else if (language === "ecode") {
+        ecodeRender(previewPanel, vditor.options.cdn, vditor.options.theme);
     } else if (language === "plantuml") {
         plantumlRender(previewPanel, vditor.options.cdn);
     } else if (language === "graphviz") {

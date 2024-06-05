@@ -11,6 +11,7 @@ import {mediaRender} from "./ts/markdown/mediaRender";
 import {mermaidRender} from "./ts/markdown/mermaidRender";
 import {markmapRender} from "./ts/markdown/markmapRender";
 import {mindmapRender} from "./ts/markdown/mindmapRender";
+import {ecodeRender} from "./ts/markdown/ecodeRender";
 import {outlineRender} from "./ts/markdown/outlineRender";
 import {plantumlRender} from "./ts/markdown/plantumlRender";
 import {md2html, previewRender} from "./ts/markdown/previewRender";
@@ -45,6 +46,7 @@ class Vditor {
     public static abcRender = abcRender;
     /** 脑图渲染 */
     public static mindmapRender = mindmapRender;
+    public static ecodeRender = ecodeRender;
     /** plantuml渲染 */
     public static plantumlRender = plantumlRender;
     /** 大纲渲染 */

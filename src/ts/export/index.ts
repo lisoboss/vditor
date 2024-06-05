@@ -74,6 +74,7 @@ export const exportHTML = (vditor: IVditor) => {
     Vditor.graphvizRender(previewElement, '${vditor.options.cdn}');
     Vditor.chartRender(previewElement, '${vditor.options.cdn}', '${vditor.options.theme}');
     Vditor.mindmapRender(previewElement, '${vditor.options.cdn}', '${vditor.options.theme}');
+    Vditor.ecodeRender(previewElement, '${vditor.options.cdn}', '${vditor.options.theme}');
     Vditor.abcRender(previewElement, '${vditor.options.cdn}');
     ${vditor.options.preview.render.media.enable ? 'Vditor.mediaRender(previewElement);' : ""}
     Vditor.speechRender(previewElement);
