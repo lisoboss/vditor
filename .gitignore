@@ -5,3 +5,5 @@
 /demo/dist
 /coverage
 .vscode/*
+/test
+.node-version
