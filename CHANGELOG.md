@@ -2,6 +2,10 @@
 
 ### 升级
 * 3.9
+  * 添加 markmapRender 方法
+  * 添加 SMILESRender 方法
+  * 添加 insertMD 方法
+  * 添加 options.upload.renderLinkDest
   * 添加 options.preview.math.mathJaxOptions
   * 添加 hljs.langs
   * 添加 option.keydown
@@ -15,8 +19,29 @@
 
 * [open issues](https://github.com/Vanessa219/vditor/issues)
 
-### v3.10.5 / 2024-05
+### v3.10.8 / 2024-11
 
+### v3.10.7 / 2024-10-15
+
+* [支持化学物质结构渲染](https://github.com/Vanessa219/vditor/issues/1158) `引入特性`
+* [内容为空时使用工具栏插入表情错误](https://github.com/Vanessa219/vditor/issues/1662) `修复缺陷`
+* [更新 hljs，支持更多的语言和外观](https://github.com/Vanessa219/vditor/issues/1680) `改进功能`
+* [撤销后 echart 无法渲染](https://github.com/Vanessa219/vditor/issues/1673) `修复缺陷`
+
+### v3.10.6 / 2024-09-11
+
+* [支持 echarts 中执行函数](https://github.com/Vanessa219/vditor/issues/1672) `改进功能`
+* [井号后输入空格就渲染标题](https://github.com/Vanessa219/vditor/issues/729) `改进功能`
+* [ir 模式下标题删除报错](https://github.com/Vanessa219/vditor/issues/1666) `修复缺陷`
+* [升级 echarts 至 5.5.1](https://github.com/Vanessa219/vditor/issues/1664) `开发重构`
+* [添加 `insertMD` 方法](https://github.com/Vanessa219/vditor/issues/1640) `引入特性`
+
+### v3.10.5 / 2024-08-09
+
+* [添加 `upload.renderLinkDest` 用于扩展粘贴时图片链接的处理](https://github.com/Vanessa219/vditor/issues/1186) `引入特性`
+* [图标配置为 `material` 时，列表反向缩进与缩进的图标错误](https://github.com/Vanessa219/vditor/issues/1656) `修复缺陷`
+* [提供非混淆版本的产物代码](https://github.com/Vanessa219/vditor/issues/1653) `开发重构`
+* [Bump ws from 6.2.2 to 6.2.3](https://github.com/Vanessa219/vditor/pull/1635) `dependencies`
 * [支持 SV 模式下列表的反向缩进](https://github.com/Vanessa219/vditor/pull/1630) `引入特性`
 * [添加 `updateToolbarConfig` 方法](https://github.com/Vanessa219/vditor/issues/1627) `引入特性`
 

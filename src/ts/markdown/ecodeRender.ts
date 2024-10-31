@@ -31,7 +31,6 @@ export const ecodeRender = (element: (HTMLElement | Document) = document, cdn = 
                         e.classList.add("ecode")
                     }
 
-
                     Ecode(e);
 
                     e.setAttribute("data-processed", "true");

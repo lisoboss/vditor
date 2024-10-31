@@ -437,6 +437,7 @@ xhr.send(JSON.stringify({url: src})); // src is the address of the image outside
 | extraData | Append data to FormData { [key: string]: string | Blob } | - |
 | multiple | Allow multiple file uploads | true |
 | fieldName | The key of field name | file[] |
+| renderLinkDest?(vditor: IVditor, node: ILuteNode, entering: boolean): [string, number] | Process the image address in the clipboard | '' |
 
 #### options.resize
 
@@ -545,6 +546,8 @@ options?: IPreviewOptions {
 | - | - |
 | previewImage(oldImgElement: HTMLImageElement, lang: keyof II18n = "zh_CN", theme = "classic") | Click on the image to preview |
 | mermaidRender(element: HTMLElement, cdn = options.cdn, theme = options.theme) | flowchart/sequence diagram/gantt diagram rendering |
+| SMILESRender(element: HTMLElement, cdn = options.cdn, theme = options.theme) | the structure of chemical |
+| markmapRender(element: HTMLElement, cdn = options.cdn) | markdown Mind Map |
 | flowchartRender(element: HTMLElement, cdn = options.cdn) | flowchart.js rendering |
 | codeRender(element: HTMLElement, option?: IHljs) | Add a copy button for the code block in element |
 | chartRender(element: (HTMLElement\| Document) = document, cdn = options.cdn, theme = options.theme) | Chart rendering |
@@ -587,7 +590,7 @@ Due to the on-demand loading mechanism, the default CDN is [https://unpkg.com/vd
 If the code is modified or you need to use a self-built CDN, you can follow the steps below:
 
 * The initial `options` and` IPreviewOptions` need to add `cdn` configuration
-* `highlightRender`,` mathRender`, `abcRender`,` chartRender`, `mermaidRender` methods need to add cdn parameter
+* `highlightRender`, `mathRender`, `abcRender`, `chartRender`, `mermaidRender`, `SMILESRender`, `markmapRender`, `flowchartRender`, `mindmapRender`, `plantumlRender`, `graphvizRender`, `setCodeTheme`, `setContentTheme` methods need to add cdn parameter
 * Copy the dist directory in the successful build or [jsDelivr](https://www.jsdelivr.com/package/npm/vditor?path=dist) to the correct location
 
 ### Upgrade
