@@ -8,7 +8,7 @@ declare function Ecode(ele: HTMLElement): string
 export const ecodeRender = (element: (HTMLElement | Document) = document, cdn = Constants.CDN, theme: string) => {
     const ecodeElements = ecodeRenderAdapter.getElements(element);
     if (ecodeElements.length > 0) {
-        addStyle(`${cdn}/dist/js/ecode/ecode.css`, "vditorEcodeStyle");
+        addStyle(`${cdn}/dist/js/ecode/styles/ecode.css`, "vditorEcodeStyle");
         addScript(`${cdn}/dist/js/ecode/ecode.js`, "vditorEcodeScript").then(() => {
             ecodeElements.forEach((e: HTMLDivElement) => {
                 if (e.parentElement.classList.contains("vditor-wysiwyg__pre") ||

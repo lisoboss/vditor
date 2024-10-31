@@ -17,6 +17,7 @@ interface IUndo {
 
 class Undo {
     private stackSize = 50;
+    // @ts-ignore
     private dmp: DiffMatchPatch.diff_match_patch;
     private wysiwyg: IUndo;
     private ir: IUndo;
@@ -136,7 +137,9 @@ class Undo {
         let text;
         if (isRedo) {
             const redoPatchList = this.dmp.patch_deepCopy(state).reverse();
+            // @ts-ignore
             redoPatchList.forEach((patch) => {
+                // @ts-ignore
                 patch.diffs.forEach((diff) => {
                     diff[0] = -diff[0];
                 });
